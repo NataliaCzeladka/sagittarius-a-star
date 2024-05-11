@@ -11,7 +11,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
-    color: #fff;
+    color: #fafafa;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -26,13 +26,71 @@ main {
     background-repeat: no-repeat;
 }
 
+.home-page-text-lge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 350%;
+    letter-spacing: 2px;
+    /* Credit: code for outline effect taken from stackoverflow.com and edited slightly to fit the project's needs */
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.home-page-text-sml {
+    line-height: 150%;
+    letter-spacing: 1px;
+    font-size: 170%;
+    /* Credit: code for outline effect taken from stackoverflow.com and edited slightly to fit the project's needs */
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
 .logo {
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 220%;
+    font-size: 200%;
 }
 
 .logo img {
-    height: 80px;
+    height: 70px;
+}
+
+.shop-now-button {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: 90%;
+    font-weight: 600;
+    background: black;
+    min-width: 200px;
+    border: #5e7ea8 solid 2px;
+    border-radius: 2%;
+    color: #5e7ea8;
+}
+
+.shop-now-button:hover {
+    background-color: #5e7ea8;
+    border:#000 solid 2px;
+    color:#000;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+footer {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+footer a {
+    padding: 2px;
+}
+
+a {
+    color: #5e7ea8;
+}
+
+a:hover {
+    color: #adadad;
 }
