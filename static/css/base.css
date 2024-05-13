@@ -94,3 +94,13 @@ a {
 a:hover {
     color: #adadad;
 }
+
+.categories-li {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    padding-top: 0;
+}
