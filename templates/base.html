@@ -27,7 +27,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="icon" href="{% static 'favicon/black_hole.png' %}" type="image/png" />
+        <link rel="icon" href="{% static 'favicon/black_hole.png' %}" type="image/png">
     {% endblock %}
 
     {% block extra_css %}
@@ -51,7 +51,7 @@
       <div id="topnav" class="row d-none d-lg-flex">
           <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link">
-                  <h2 class="logo text-white"><img src="/static/favicon/black_hole.png" alt="logo"> 
+                  <h2 class="logo text-white"><img src="{% static 'favicon/black_hole.png' %}" alt="logo">
                     Sagittarius A-Star</h2>
               </a>
           </div>
