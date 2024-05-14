@@ -19,7 +19,7 @@ body {
 
 main {
     flex: 1 0 auto;
-    background-image: url('/media/home_page_image1.webp');
+    background-image: url('../images/home_page_image1.webp');
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
