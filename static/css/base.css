@@ -24,6 +24,9 @@ main {
     background-position: center bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    /* nested flexbox used for .overlay to cover the whole main section without affecting the footer */
+    display: flex;
+    flex-direction: column;
 }
 
 .home-page-text-lge {
@@ -106,11 +109,7 @@ a:hover {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #000;
-	z-index: -1;
+    flex: 1 0 auto;
+	background: black;
+	z-index: 1;
 }
