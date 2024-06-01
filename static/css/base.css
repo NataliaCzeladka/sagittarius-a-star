@@ -110,6 +110,6 @@ a:hover {
 
 .overlay {
     flex: 1 0 auto;
-	background: black;
+	background-image: url('../images/overlay.webp');
 	z-index: 1;
 }
