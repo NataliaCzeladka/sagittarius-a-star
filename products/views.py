@@ -11,7 +11,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-    bestsellers = None
+    is_bestseller = None
     sort = None
     direction = None
 
@@ -54,7 +54,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_bestsellers': bestsellers,
+        'current_bestsellers': is_bestseller,
         'current_sorting': current_sorting,
     }
 
