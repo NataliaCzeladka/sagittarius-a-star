@@ -11,6 +11,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    bestsellers = None
     sort = None
     direction = None
 
@@ -33,6 +34,11 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'is_bestseller' in request.GET:
+            # Convert the value to a boolean
+            is_bestseller = request.GET['is_bestseller'].lower() in ('true')
+            products = products.filter(is_bestseller=is_bestseller)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -48,6 +54,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_bestsellers': bestsellers,
         'current_sorting': current_sorting,
     }
 

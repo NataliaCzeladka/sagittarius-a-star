@@ -31,13 +31,13 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link categories-li text-white text-uppercase mr-5" href="#" id="bestsellers-link" aria-labelledby="bestsellers-link" aria-expanded="false">
+            <a class="nav-link categories-li text-white text-uppercase mr-5" href="{% url 'products' %}?is_bestseller=True" id="bestsellers-link" aria-labelledby="bestsellers-link" aria-expanded="false">
                 Bestsellers
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link categories-li text-white text-uppercase" href="#" id="new-arrivals-link" aria-labelledby="new-arrivals-link" aria-expanded="false">
+            <a class="nav-link categories-li text-white text-uppercase" href="{% url 'products' %}?is_new=True" id="new-arrivals-link" aria-labelledby="new-arrivals-link" aria-expanded="false">
                 New Arrivals
             </a>
         </li>
