@@ -5,11 +5,9 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0">
-                <a href="" class="dropdown-item">By Author</a>
-                <a href="" class="dropdown-item">By Cover Type</a>
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Year</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=year&direction=desc" class="dropdown-item ">By Year</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
@@ -19,27 +17,27 @@
                 Categories
             </a>
             <div class="dropdown-menu border-0">
-                <a href="" class="dropdown-item">Astronomy Charts</a>
-                <a href="" class="dropdown-item">Astronomy for Children</a>
-                <a href="" class="dropdown-item">Astrophotography</a>
-                <a href="" class="dropdown-item">Astrophysics</a>
-                <a href="" class="dropdown-item">Popular Astronomy</a>
-                <a href="" class="dropdown-item">Space Exploration</a>
-                <a href="" class="dropdown-item">Star Gazing</a>
-                <a href="" class="dropdown-item">Stars & Interstellar Matter</a>
-                <a href="" class="dropdown-item">Telescopes & Equipment</a>
-                <a href="" class="dropdown-item">Theoretical Astronomy</a>
+                <a href="{% url 'products' %}?category=astronomy_charts" class="dropdown-item">Astronomy Charts</a>
+                <a href="{% url 'products' %}?category=astronomy_for_children" class="dropdown-item">Astronomy for Children</a>
+                <a href="{% url 'products' %}?category=astrophotography" class="dropdown-item">Astrophotography</a>
+                <a href="{% url 'products' %}?category=astrophysics" class="dropdown-item">Astrophysics</a>
+                <a href="{% url 'products' %}?category=popular_astronomy" class="dropdown-item">Popular Astronomy</a>
+                <a href="{% url 'products' %}?category=space_exploration" class="dropdown-item">Space Exploration</a>
+                <a href="{% url 'products' %}?category=star_gazing" class="dropdown-item">Star Gazing</a>
+                <a href="{% url 'products' %}?category=stars_interstellar_matter" class="dropdown-item">Stars & Interstellar Matter</a>
+                <a href="{% url 'products' %}?category=telescopes_equipment" class="dropdown-item">Telescopes & Equipment</a>
+                <a href="{% url 'products' %}?category=theoretical_astronomy" class="dropdown-item">Theoretical Astronomy</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link categories-li text-white text-uppercase mr-5" href="#" id="bestsellers-link" aria-labelledby="bestsellers-link" aria-expanded="false">
+            <a class="nav-link categories-li text-white text-uppercase mr-5" href="{% url 'products' %}?is_bestseller=True" id="bestsellers-link" aria-labelledby="bestsellers-link" aria-expanded="false">
                 Bestsellers
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link categories-li text-white text-uppercase" href="#" id="new-arrivals-link" aria-labelledby="new-arrivals-link" aria-expanded="false">
+            <a class="nav-link categories-li text-white text-uppercase" href="{% url 'products' %}?is_new=True" id="new-arrivals-link" aria-labelledby="new-arrivals-link" aria-expanded="false">
                 New Arrivals
             </a>
         </li>
