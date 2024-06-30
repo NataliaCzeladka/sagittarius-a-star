@@ -144,3 +144,20 @@ a:hover {
 .remove-item {
     cursor: pointer;
 }
+
+/* Bootstrap toasts customization */
+
+.message-container {
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible !important;
+}
+
+.toast-capper {
+    height: 2px !important;
+}
