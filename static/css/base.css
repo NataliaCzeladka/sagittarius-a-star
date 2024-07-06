@@ -127,7 +127,9 @@ a:hover {
 
 .overlay {
     flex: 1 0 auto;
-	background-image: url('../images/overlay.webp');
+	background-image: url('../images/shutterstock_522121006.jpg');
+    background-size: 30%;
+    background-repeat: repeat;
 	z-index: 1;
 }
 
