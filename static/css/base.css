@@ -27,6 +27,7 @@ main {
     /* nested flexbox used for .overlay to cover the whole main section without affecting the footer */
     display: flex;
     flex-direction: column;
+    margin: 10px 0 10px 0;
 }
 
 .home-page-text-lge {
@@ -123,6 +124,7 @@ a:hover {
 
 .orbitron {
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
 .overlay {

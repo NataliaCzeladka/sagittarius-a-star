@@ -7,10 +7,10 @@ from .models import Product, Category
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
+    
     products = Product.objects.all()
     query = None
-    categories = None
+    categories = []
     is_bestseller = None
     is_new = None
     sort = None
@@ -38,12 +38,12 @@ def all_products(request):
 
         if 'is_bestseller' in request.GET:
             # Convert the value to a boolean
-            is_bestseller = request.GET['is_bestseller'].lower() in ('true')
+            is_bestseller = request.GET['is_bestseller'].lower() == 'true'
             products = products.filter(is_bestseller=is_bestseller)
 
         if 'is_new' in request.GET:
             # Convert the value to a boolean
-            is_new = request.GET['is_new'].lower() in ('true')
+            is_new = request.GET['is_new'].lower() == 'true'
             products = products.filter(is_new=is_new)
 
         if 'q' in request.GET:
@@ -55,7 +55,7 @@ def all_products(request):
             queries = Q(title__icontains=query) | Q(author__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
     
-    current_sorting = f'{sort}_{direction}'
+    current_sorting = f'{sort}_{direction}' if sort and direction else sort
 
     context = {
         'products': products,

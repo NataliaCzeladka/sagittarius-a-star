@@ -14,7 +14,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center mt-3">
-                    <h3 class="orbitron m-3">PRODUCTS</h3>
+                    <h3 class="orbitron m-3">
+                        {% if current_categories %}
+                            {{ current_categories.0.friendly_name }}
+                        {% elif current_bestsellers == True %}
+                            {{ 'Bestsellers' }}
+                        {% elif current_new_arrivals == True %}
+                            {{ 'New Arrivals' }}
+                        {% elif current_sorting == 'price_asc' or current_sorting == 'price_desc' %}
+                            {{ 'Books by price' }}
+                        {% elif current_sorting == 'rating_asc' or current_sorting == 'rating_desc' %}
+                            {{ 'Books by rating' }}
+                        {% elif current_sorting == 'year_asc' or current_sorting == 'year_desc' %}
+                            {{ 'Books by year' }}
+                        {% elif search_term %}
+                        {% else %}
+                            All Books
+                        {% endif %}
+                    </h3>
                     <hr class="w-50 mb-1">
                 </div>
             </div>
@@ -31,17 +48,15 @@
                                     <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
                                     <option value="year_asc" {% if current_sorting == 'year_asc' %}selected{% endif %}>Year (oldest to newest)</option>
                                     <option value="year_desc" {% if current_sorting == 'year_desc' %}selected{% endif %}>Year (newest to oldest)</option>
-                                    <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                                    <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 order-md-first">
-                            <p class="text-muted mt-3 text-center text-md-left">
-                                {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                    <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            <p class="mt-3 text-center text-md-left">
+                                {% if search_term or current_categories or current_sorting or current_bestsellers or current_new_arrivals %}
+                                    <span><a href="{% url 'products' %}"><i class="fa-solid fa-arrow-left"></i> Back to All Books</a> | </span>
                                 {% endif %}
-                                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                                {{ products|length }} Books {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                             </p>
                         </div>
                     </div>
