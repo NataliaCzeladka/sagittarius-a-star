@@ -77,6 +77,31 @@ main {
     color:#000;
 }
 
+.card {
+    padding: 20px;
+    border-width: 2px;
+    border-color: #656375;
+    border-radius: 0;
+    background-color: #00000090;
+}
+
+.card-img-top {
+    display: block;
+    width: auto;
+    height: 400px;
+    object-fit: contain;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-body {
+    height: 110px;
+}
+
+.txt-card-footer {
+    color: #5e7ea8;
+}
+
 .btn-black {
     background: black;
     color: white;
@@ -124,13 +149,15 @@ a:hover {
 
 .orbitron {
     font-family: 'Orbitron', sans-serif;
+    font-size: 200%;
     letter-spacing: 2px;
+    color: #ecc488;
 }
 
 .overlay {
     flex: 1 0 auto;
 	background-image: url('../images/shutterstock_522121006.jpg');
-    background-size: 30%;
+    background-size: 50%;
     background-repeat: repeat;
 	z-index: 1;
 }

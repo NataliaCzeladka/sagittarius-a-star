@@ -67,8 +67,8 @@
                     <div class="row mt-1 mb-2"></div>
                     <div class="row">
                         {% for product in products %}
-                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="card border-0 m-3">
+                            <div class="col-sm-6 col-md-4 col-xl-3">
+                                <div class="card m-3">
                                     {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -78,24 +78,24 @@
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                     </a>
                                     {% endif %}
-                                    <div class="card-body bg-dark pb-0">
+                                    <div class="card-body pb-0">
                                         <p class="mb-0 text-green">{{ product.title }} / {{ product.year }}</p>
                                     </div>
-                                    <div class="card-footer bg-dark border-0 text-left">
+                                    <div class="card-footer border-0 text-left">
                                         <div class="row">
                                             <div class="col">
                                                 <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                                 {% if product.category %}
-                                                    <p class="small mt-1 mb-0">
-                                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <p class="mt-1 mb-0">
+                                                        <a class="txt-card-footer" href="{% url 'products' %}?category={{ product.category.name }}">
                                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                         </a>
                                                     </p>
                                                 {% endif %}
                                                 {% if product.rating %}
-                                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                    <p class="txt-card-footer"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
                                                 {% else %}
-                                                    <small class="text-muted">No Rating</small>
+                                                    <p class="txt-card-footer">No Rating</p>
                                                 {% endif %}
                                             </div>
                                         </div>
