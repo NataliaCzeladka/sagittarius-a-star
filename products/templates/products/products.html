@@ -81,7 +81,7 @@
                                     <div class="card-body pb-0">
                                         <p class="mb-0 text-green">{{ product.title }} / {{ product.year }}</p>
                                     </div>
-                                    <div class="card-footer border-0 text-left">
+                                    <div class="card-footer border-0">
                                         <div class="row">
                                             <div class="col">
                                                 <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
@@ -93,12 +93,20 @@
                                                     </p>
                                                 {% endif %}
                                                 {% if product.rating %}
-                                                    <p class="txt-card-footer"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
+                                                    <p class="txt-card-footer"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5.0</p>
                                                 {% else %}
                                                     <p class="txt-card-footer">No Rating</p>
                                                 {% endif %}
-                                            </div>
+                                            </div> 
                                         </div>
+                                        {% if request.user.is_superuser %}
+                                        <div class="text-right">
+                                            <small>
+                                                <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                            </small>
+                                        </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
