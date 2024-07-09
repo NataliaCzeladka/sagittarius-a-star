@@ -1,4 +1,24 @@
-# Sagittarius A-Star: A Supermassive Book Store
+# Sagittarius A-Star: A Supermassive Bookstore
+
+Welcome to 'Sagittarius A-Star', an astronomy-focused online bookstore, where the wonders of the universe are just a click away!
+
+Named after the supermassive black hole at the center of our galaxy, our online bookstore is dedicated to bringing the vast and fascinating world of astronomy to your fingertips. Whether you're a seasoned astronomer, a curious beginner, or even a young aspiring stargazer, you'll find a diverse collection of astronomy books tailored to your interests.
+
+Our carefully prepared selection of books consists of 10 categories:
+- Astronomy Charts,
+- Astronomy for Children, 
+- Astrophotography,
+- Astrophysics,
+- Popular Astronomy,
+- Space Exploration,
+- Stargazing,
+- Stars & Interstellar Matter,
+- Telescopes & Equipment,
+- Theoretical Astronomy.
+
+## Rationale for creating the website
+
+The inspiration behind 'Sagittarius A-Star: A Supermassive Bookstore' comes from my deep passion for astronomy and a desire to share this enthusiasm with a broader audience. As an astronomy enthusiast, I have always been captivated by the wonders of the universe, and I wanted to create a platform that brings this awe-inspiring knowledge to both seasoned astronomers and curious newcomers. The bookstore serves as a dedicated space where individuals of all ages can explore a diverse range of astronomy books, carefully selected to cater to various interests within the field. By offering a user-friendly, beautifully designed website with features such as personalized accounts, order history, newsletter subscription and a comprehensive selection of books, my goal is to make the vastness of the cosmos accessible and engaging. Ultimately, 'Sagittarius A-Star' aims to inspire curiosity, foster a deeper understanding of the universe, and provide a convenient way for people to embark on their own astronomical journeys from the comfort of their homes.
 
 ## User Stories
 
@@ -16,7 +36,7 @@ EPIC 2: Product Browsing and Searching
 - As a site user, I want to see a full list of products allowing me to browse and explore the complete selection of available items.  (MUST HAVE)
 - As a site user, I want to view the price of a product to assess its affordability and decide whether it fits my budget before purchasing. (MUST HAVE)
 - As a site user, I can access individual product pages to explore additional details such as product description. (MUST HAVE)
-- As a site user, I want access to sorting functionality that allows me to organize results by criteria such as price, publication date, and customer ratings to narrow down my choices effectively. (SHOULD HAVE)
+- As a site user, I want to access a sorting functionality that allows me to organize results by criteria such as price, publication date, and customer ratings to narrow down my choices effectively. (SHOULD HAVE)
 - As a site user, I expect a seamless transition from browsing to purchasing books, with clear calls-to-action and a user-friendly checkout process. (MUST HAVE)
 - As a site user, I prefer to see real-time availability status (e.g., in stock, out of stock) of books to make informed purchase decisions. (WON'T HAVE)
 - As a registered user, I would like the option to add books to a wishlist or save them for later purchase, making it easy to track and manage items of interest. (WON'T HAVE)
@@ -47,11 +67,11 @@ EPIC 5 - PRODUCT ADMINISTRATION
 - As a site administrator, I can delete products from the store to efficiently manage inventory, eliminating items that are discontinued or no longer in demand. (MUST HAVE)
 - As a site administrator, I have the ability to set and adjust stock levels for each product, ensuring precise inventory control to prevent overselling or stockouts, and to maintain accurate product availability information for users. (COULD HAVE)
 
-EPIC 6 - MARKETING AND DIDITAL PRESENCE
+EPIC 6 - MARKETING AND DIGITAL PRESENCE
 
 - As a site user, I want to be able to subscribe to the site's newsletter to receive offers and updates via email. (COULD HAVE)
 - As a site admin, I need to set relevant keywords on site pages to enhance visibility and improve search engine ranking, making it easier for potential customers to find the site on Google. (MUST HAVE)
-- As a site admin, I want to display my business's social media accounts on the site to encourage users to engage more deeply with the brand.
+- As a site admin, I want to display my business's social media accounts on the site to encourage users to engage more deeply with the brand. (MUST HAVE)
 -  As a site admin, I want to implement customer retention strategies (such as loyalty programs, and exclusive offers) to enhance customer satisfaction and encourage repeat purchases. (WON'T HAVE)
 - As a site admin, I want to create referral programs that encourage current customers to refer new customers, using word-of-mouth marketing to grow our customer community. (WON'T HAVE)
 
