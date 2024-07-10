@@ -3,11 +3,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -41,12 +41,10 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if 'is_bestseller' in request.GET:
-            # Convert the value to a boolean
             is_bestseller = request.GET['is_bestseller'].lower() == 'true'
             products = products.filter(is_bestseller=is_bestseller)
 
         if 'is_new' in request.GET:
-            # Convert the value to a boolean
             is_new = request.GET['is_new'].lower() == 'true'
             products = products.filter(is_new=is_new)
 
@@ -60,6 +58,17 @@ def all_products(request):
             products = products.filter(queries)
     
     current_sorting = f'{sort}_{direction}' if sort and direction else sort
+
+    # Pagination
+    paginator = Paginator(products, 10)  # Show 10 products per page
+
+    page = request.GET.get('page')
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
 
     context = {
         'products': products,
