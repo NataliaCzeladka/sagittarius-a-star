@@ -175,7 +175,7 @@
         &nbsp;&nbsp;Subscribe to our newsletter:&nbsp;
         <form class="d-flex flex-wrap" method="POST" action="{% url 'subscribe' %}">
             {% csrf_token %}
-            <div><input class="text-muted px-1" type="email" name="email" placeholder="Your Email"></div>&nbsp;
+            <div><input class="text-muted px-1" type="email" name="email" placeholder="Your Email" required></div>&nbsp;
             <div><button class="px-1" type="submit">Subscribe </button></div>
         </form>
     </div>
