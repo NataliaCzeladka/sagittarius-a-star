@@ -172,6 +172,12 @@
             aria-label="Find us on Instagram (link opens in a new tab)">
             <i class="fa-brands fa-instagram"></i>
         </a>
+        &nbsp;&nbsp;Subscribe to our newsletter:&nbsp;
+        <form class="d-flex flex-wrap" method="POST" action="{% url 'subscribe' %}">
+            {% csrf_token %}
+            <div><input class="text-muted px-1" type="email" name="email" placeholder="Your Email"></div>&nbsp;
+            <div><button class="px-1" type="submit">Subscribe </button></div>
+        </form>
     </div>
     <div class="row justify-content-center">
         © 2024 Natalia Czeladka, Web App Developement Student @ Code Institute&nbsp;
