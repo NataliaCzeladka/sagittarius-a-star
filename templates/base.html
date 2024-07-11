@@ -172,11 +172,11 @@
             aria-label="Find us on Instagram (link opens in a new tab)">
             <i class="fa-brands fa-instagram"></i>
         </a>
-        &nbsp;&nbsp;Subscribe to our newsletter:&nbsp;
+        <span class="px-2 py-0">Subscribe to our newsletter:</span>
         <form class="d-flex flex-wrap" method="POST" action="{% url 'subscribe' %}">
             {% csrf_token %}
-            <div><input class="text-muted px-1" type="email" name="email" placeholder="Your Email" required></div>&nbsp;
-            <div><button class="px-1" type="submit">Subscribe </button></div>
+            <div><input class="text-muted px-2" type="email" name="email" placeholder="Your Email" required></div>
+            <div><button class="shop-now-button text-uppercase ml-2" type="submit">Subscribe </button></div>
         </form>
     </div>
     <div class="row justify-content-center">
