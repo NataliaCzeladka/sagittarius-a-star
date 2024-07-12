@@ -2,6 +2,8 @@
 
 Welcome to 'Sagittarius A-Star', an astronomy-focused online bookstore, where the wonders of the universe are just a click away!
 
+![Sagittarius A-Star Mockup](static/docs/mockup.png)
+
 Named after the supermassive black hole at the center of our galaxy, our online bookstore is dedicated to bringing the vast and fascinating world of astronomy to your fingertips. Whether you're a seasoned astronomer, a curious beginner, or even a young aspiring stargazer, you'll find a diverse collection of astronomy books tailored to your interests.
 
 Our carefully prepared selection of books consists of 10 categories:
@@ -15,6 +17,8 @@ Our carefully prepared selection of books consists of 10 categories:
 - Stars & Interstellar Matter,
 - Telescopes & Equipment,
 - Theoretical Astronomy.
+
+
 
 ## Rationale for creating the website
 
