@@ -103,6 +103,12 @@ For the website's main logo, navbar, main headings, and footer, I used another s
 
 I used [Google Fonts](https://fonts.google.com/) to import the fonts that style all of the text content, and [Font Awesome](https://fontawesome.com/) to provide icons across the website.
 
+### Imagery
+
+Images play a crucial role in enhancing the overall user experience, making the content more engaging. However, the website currently features only two: the main homepage picture and the overlay picture used for all other pages. This limitation stems from the fact that each listing will include a featured image uploaded by the shop owner when adding new products to the store. Additionally, there is a logo placed in the top left corner of every page, which is also used as a favicon. The images were sourced from [Shutterstock](https://www.shutterstock.com/), [Midjourney](https://www.midjourney.com/home), and [Flaticon](https://www.flaticon.com/) (details in the 'Credits' section). All book cover images came from [Amazon](https://www.amazon.co.uk/) listings.
+
+https://www.flaticon.com/free-icons/black-hole
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -435,3 +441,24 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/NataliaCzeladka/sagittarius-a-star)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+## Credits
+
+### Media
+
+| Image | Source |
+| --- | --- |
+| ![Home page picture](static/images/home_page_image1.webp) | AI-generated with [Midjourney](https://www.midjourney.com/home), used as the main home page image |
+| ![Overlay image](static/images/shutterstock_522121006.jpg) | Picture by [Ismagilova](https://www.shutterstock.com/g/Ismagilova) on [Shutterstock](https://www.shutterstock.com/), used as an overlay / background image on all pages except the home page |
+| ![Astronomy Charts](static/docs/astronomy_charts.png) | Covers of books from the 'Astronomy Charts' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astronomy for Children](static/docs/astronomy_for_children.png) | Covers of books from the 'Astronomy for Children' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astrophotography](static/docs/astrophotography.png) | Covers of books from the 'Astrophotography' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astrophysics](static/docs/astrophysics.png) | Covers of books from the 'Astrophysics' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Popular Astronomy](static/docs/popular_astronomy.png) | Covers of books from the 'Popular Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Space Exploration](static/docs/space_exploration.png) | Covers of books from the 'Space Exploration' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Stargazing](static/docs/stargazing.png) | Covers of books from the 'Stargazing' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Stars & Interstellar Matter](static/docs/stars_interstellar_matter.png) | Covers of books from the 'Stars & Interstellar Matter' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Telescopes & Equipment](static/docs/telescopes_equipment.png) | Covers of books from the 'Telescopes & Equipment' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Theoretical Astronomy](static/docs/theoretical_astronomy.png) | Covers of books from the 'Theoretical Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![No image](media/noimage.png) | AI-generated with [Midjourney](https://www.midjourney.com/home) for listing without images |
+| ![Favicon](static/favicon/black_hole.png) | Designed by [BZZRINCANTATION](https://www.flaticon.com/authors/bzzrincantation) on [Flaticon](https://www.flaticon.com/), used on the website as a store logo and a favicon |
