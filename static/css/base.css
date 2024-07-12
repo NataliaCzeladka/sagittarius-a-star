@@ -69,9 +69,9 @@ main {
     font-size: 90%;
     font-weight: 600;
     background: black;
-    min-width: 200px;
+    min-width: 220px;
     border: #5e7ea8 solid 2px;
-    border-radius: 2%;
+    border-radius: 0;
     color: #5e7ea8;
 }
 
@@ -363,10 +363,36 @@ input[name='q']::placeholder {
     .logo img {
         height: 50px;
     }
+
+    .home-page-text-lge {
+        margin-top: 2rem;
+        font-size: 340%;
+    }
+
+    .home-page-text-sml {
+        line-height: 130%;
+    }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1200px) {
 
+    .home-page-text-lge {
+        margin-top: 2rem;
+        font-size: 340%;
+    }
+
+    .home-page-text-sml {
+        line-height: 130%;
+    }
+
+    .home-page-text-lge {
+        margin-top: 2rem;
+        font-size: 320%;
+    }
+
+    .home-page-text-sml {
+        line-height: 130%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
@@ -406,6 +432,15 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 
+    .home-page-text-lge {
+        margin-top: 2rem;
+        font-size: 310%;
+    }
+
+    .home-page-text-sml {
+        line-height: 130%;
+    }
+
     footer {
         font-size: 90%;
     }
@@ -419,6 +454,16 @@ input[name='q']::placeholder {
 
     .nav-link i.fa-lg {
         font-size: 1rem;
+    }
+
+    .home-page-text-lge {
+        margin-top: 2rem;
+        font-size: 280%;
+    }
+
+    .home-page-text-sml {
+        font-size: 160%;
+        line-height: 140%;
     }
 
     footer {
@@ -440,6 +485,22 @@ input[name='q']::placeholder {
         font-size: 95%;
     }
 
+    .home-page-text-lge {
+        margin-top: 50px;
+        padding-bottom: 30px !important;
+        font-size: 190%;
+        line-height: 130%;
+    }
+
+    .home-page-text-sml {
+        font-size: 160%;
+        line-height: 140%;
+    }
+
+    .shop-now-button {
+        font-size: 80%;
+    }
+
     footer {
         font-size: 90%;
     }
@@ -459,6 +520,24 @@ input[name='q']::placeholder {
         font-size: 90%;
     }
 
+    .home-page-text-lge {
+        margin: 15px 0 0 0;
+        padding-bottom: 20px !important;
+        font-size: 130%;
+        line-height: 130%;
+    }
+
+    .home-page-text-sml {
+        font-size: 130%;
+        line-height: 120%;
+    }
+
+    .shop-now-button {
+        letter-spacing: 1px;
+        font-size: 70%;
+        min-width: 180px;
+    }
+
     footer {
         font-size: 80%;
     }
@@ -476,6 +555,24 @@ input[name='q']::placeholder {
 
     .nav-link p.my-0 {
         font-size: 80%;
+    }
+
+    .home-page-text-lge {
+        margin: 15px 0 0 0;
+        padding-bottom: 20px !important;
+        font-size: 130%;
+        line-height: 130%;
+    }
+
+    .home-page-text-sml {
+        font-size: 130%;
+        line-height: 120%;
+    }
+
+    .shop-now-button {
+        letter-spacing: 1px;
+        font-size: 70%;
+        min-width: 180px;
     }
 
     footer {

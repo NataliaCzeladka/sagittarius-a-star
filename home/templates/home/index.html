@@ -2,28 +2,23 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
 {% endblock %}
 
 {% block content %}
     <div class="container-fluid">
         <div class="row px-2">
-            <div class="col-5 ">
-                <h1 class="py-4 text-uppercase home-page-text-lge">
+            <div class=" col-10 col-md-6 col-lg-5 ">
+                <h1 class="py-5 text-uppercase home-page-text-lge">
                     A&nbsp;Supermassive
                     <br>
-                    Book Store
+                    Book&nbsp;Store
                 </h1>
-                <h4 class="home-page-text-sml">Explore the cosmos from the comfort of your home</h4>
-                <div class="my-1">
-                    <h5>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-1 mt-4">Shop Now</a>
-                        <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg text-uppercase py-1 mt-4">Contact Us</a>
-                    </h5>
+                <h4 class="home-page-text-sml mb-5">Explore the cosmos from the comfort of your home</h4>
+                <div>
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-1 mr-2 mb-2">Shop Now</a>
+                        <a href="{% url 'contact' %}" class="shop-now-button btn btn-lg text-uppercase py-1 mb-2">Contact Us</a>
+                    </h4>
                 </div>
             </div>
         </div>
