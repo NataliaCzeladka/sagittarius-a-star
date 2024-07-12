@@ -59,6 +59,10 @@ main {
     height: 60px;
 }
 
+.text-info {
+    color: #e4caa3 !important;
+}
+
 .shop-now-button {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
@@ -129,10 +133,6 @@ main {
 footer {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-}
-
-footer a {
-    padding: 2px;
 }
 
 a {
@@ -352,7 +352,25 @@ input[name='q']::placeholder {
 
 /* Media Queries */
 
-@media (max-width: 991px) {
+@media screen and (max-width: 1400px) {
+    
+    .logo {
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 118%;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+
     .header-container {
         padding-top: 116px;
     }
@@ -366,15 +384,10 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 0.15rem;
+        padding-top: 1rem;
     }
 
     .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
-
-    .navbar-toggler {
-        padding: .6rem .6rem;
         font-size: 1rem;
     }
 
@@ -391,5 +404,81 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    footer {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .nav-link {
+        padding: 1rem 0.5rem 0 0.5rem ;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 575px) {
+
+    .nav-link {
+        padding: 1rem 0.5rem 0 0.5rem ;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-link p.my-0 {
+        font-size: 95%;
+    }
+
+    footer {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 330px) and (max-width: 449px) {
+
+    .nav-link {
+        padding: 1rem 0.2rem 0 0.2rem ;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-link p.my-0 {
+        font-size: 90%;
+    }
+
+    footer {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 329px) {
+
+    .nav-link {
+        padding: 1rem 0.1rem 0 0.1rem ;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-link p.my-0 {
+        font-size: 80%;
+    }
+
+    footer {
+        font-size: 80%;
     }
 }
