@@ -81,6 +81,14 @@ main {
     color:#000;
 }
 
+.pagination {
+    font-size: 110%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: #000 4px 4px 4px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
 .card {
     padding: 20px;
     border-width: 2px;
@@ -140,7 +148,7 @@ a {
 }
 
 a:hover {
-    color: #7e98b9;
+    color: #92afd6;
     text-decoration: none;
 }
 

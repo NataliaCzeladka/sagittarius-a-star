@@ -60,7 +60,7 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}' if sort and direction else sort
 
     # Pagination
-    paginator = Paginator(products, 10)  # Show 10 products per page
+    paginator = Paginator(products, 12)  # Show 12 products per page
 
     page = request.GET.get('page')
     try:
