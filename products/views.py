@@ -111,10 +111,17 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+    
+    # Custom labels for specific fields
+    custom_labels = {
+        'is_new': 'Is it a new arrival?',
+        'is_bestseller': 'Is it a bestseller?',
+    }
+
     template = 'products/add_product.html'
     context = {
         'form': form,
+        'custom_labels': custom_labels,  # Include custom labels in the context
     }
 
     return render(request, template, context)
