@@ -192,6 +192,8 @@ a:hover {
     border: 2px solid #656375;
     border-radius: 0;
     background-color: #00000090;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .product-list {
