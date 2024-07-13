@@ -81,6 +81,10 @@ main {
     color:#000;
 }
 
+.form-group {
+    width: 150px;
+}
+
 .pagination {
     font-size: 110%;
     font-weight: 600;
@@ -167,6 +171,10 @@ a:hover {
     font-size: 200%;
     letter-spacing: 2px;
     color: #ecc488;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
 }
 
 .glaucous {
@@ -513,7 +521,6 @@ input[name='q']::placeholder {
         font-size: 190%;
     }
 
-
     footer {
         font-size: 90%;
     }
@@ -562,6 +569,10 @@ input[name='q']::placeholder {
 
     .txt-card-footer {
         margin-bottom: 0;
+    }
+
+    .image-container a img {
+        padding: 0 40px !important;
     }
 
     footer {
@@ -627,6 +638,10 @@ input[name='q']::placeholder {
 
     .shop-now-button {
         font-size: 80%;
+    }
+
+    .image-container {
+        max-width: 300px;
     }
 
     footer {
@@ -696,6 +711,10 @@ input[name='q']::placeholder {
         min-width: 180px;
     }
 
+    .book-name h3{
+        font-size: 160%;
+    }
+
     footer {
         font-size: 80%;
     }
@@ -761,6 +780,12 @@ input[name='q']::placeholder {
         letter-spacing: 1px;
         font-size: 70%;
         min-width: 180px;
+    }
+
+    .book-name {
+        h3 {
+            font-size: 140%;
+        }
     }
 
     footer {
