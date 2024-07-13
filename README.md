@@ -107,8 +107,6 @@ I used [Google Fonts](https://fonts.google.com/) to import the fonts that style 
 
 Images play a crucial role in enhancing the overall user experience, making the content more engaging. However, the website currently features only two: the main homepage picture and the overlay picture used for all other pages. This limitation stems from the fact that each listing will include a featured image uploaded by the shop owner when adding new products to the store. Additionally, there is a logo placed in the top left corner of every page, which is also used as a favicon. The images were sourced from [Shutterstock](https://www.shutterstock.com/), [Midjourney](https://www.midjourney.com/home), and [Flaticon](https://www.flaticon.com/) (details in the 'Credits' section). All book cover images came from [Amazon](https://www.amazon.co.uk/) listings.
 
-https://www.flaticon.com/free-icons/black-hole
-
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -460,5 +458,11 @@ You can fork this repository by using the following steps:
 | ![Stars & Interstellar Matter](static/docs/stars_interstellar_matter.png) | Covers of books from the 'Stars & Interstellar Matter' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
 | ![Telescopes & Equipment](static/docs/telescopes_equipment.png) | Covers of books from the 'Telescopes & Equipment' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
 | ![Theoretical Astronomy](static/docs/theoretical_astronomy.png) | Covers of books from the 'Theoretical Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![No image](media/noimage.png) | AI-generated with [Midjourney](https://www.midjourney.com/home) for listing without images |
+| ![No image](media/noimage.png) | AI-generated with [Midjourney](https://www.midjourney.com/home) for listings without images |
 | ![Favicon](static/favicon/black_hole.png) | Designed by [BZZRINCANTATION](https://www.flaticon.com/authors/bzzrincantation) on [Flaticon](https://www.flaticon.com/), used on the website as a store logo and a favicon |
+
+### Acknowledgements
+
+- [Tim Nelson](https://github.com/TravelTimN) (my Code Institute mentor) - for sharing his impressive knowledge, providing guidance, constructive feedback, and invaluable help with testing and debugging my Python code. Also, for handy tricks on using git commits and the terminal, but most importantly, for his patience, understanding and friendly advice in every situation!
+- [Code Institute Tutor Support Team](https://codeinstitute.net) for their assistance with troubleshooting and debugging some of the project issues, and providing expert guidance on challenging concepts.
+- [Code Institute Slack Community](https://code-institute-room.slack.com) -  for the moral support during moments of self-doubt and imposter syndrome, and for connecting me with lovely people I still keep in touch with.
