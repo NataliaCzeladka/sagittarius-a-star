@@ -1,6 +1,6 @@
-<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+<form class="form update-form px-1" method="POST" action="{% url 'adjust_bag' item.item_id %}">
     {% csrf_token %}
-    <div class="form-group">
+    <div class="form-group w-100">
         <div class="input-group">
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm btn-black rounded-0" 
