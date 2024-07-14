@@ -116,7 +116,15 @@ I have tested my deployed project on multiple browsers to check for compatibilit
 | Edge | ![screenshot](docs/edge.png) | Works as expected |
 | Opera | ![screenshot](docs/opera.png) | Works as expected |
 
-## Responsiveness
+## Responsiveness Testing
+
+I have tested my deployed project on multiple devices to check for responsiveness issues. It responds well to different screen sizes ensuring that users can access and navigate the content effortlessly, regardless of their chosen device. No design or functionality issues were found.
+
+| Device | Screenshot 1 | Screenshot 2 | Screenshot 3 | Notes |
+| --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot1](docs/mobile1.png) | ![screenshot2](docs/mobile2.png) | ![screenshot3](docs/mobile3.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot1](docs/tablet1.png) | ![screenshot2](docs/tablet2.png) | ![screenshot3](docs/tablet3.png) | Works as expected |
+| Desktop | ![screenshot1](docs/desktop1.png) | ![screenshot2](docs/desktop2.png) | ![screenshot3](docs/desktop3.png) | Works as expected |
 
 ## Lighthouse Audit
 
