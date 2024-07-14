@@ -128,6 +128,37 @@ I have tested my deployed project on multiple devices to check for responsivenes
 
 ## Lighthouse Audit
 
+I have tested my deployed project using the Lighthouse Audit tool to check for any major issues. 
+
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_home.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_home.png) | Some minor warnings |
+| Products | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_products.png) | Some minor warnings |
+| Products | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_products.png) | Some minor warnings |
+| Product Detail | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_product_det.png) | Some minor warnings |
+| Product Detail | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_product_det.png) | Some minor warnings |
+| Sign Up | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_signup.png) | Some minor warnings |
+| Sign Up | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_signup.png) | Some minor warnings |
+| Sign In | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_signin.png) | Some minor warnings |
+| Sign In | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_signin.png) | Some minor warnings |
+| Sign Out | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_signout.png) | Some minor warnings |
+| Sign Out | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_signout.png) | Some minor warnings |
+| Add Product | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_add_product.png) | Some minor warnings |
+| Add Product | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_add_product.png) | Some minor warnings |
+| Edit Product | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_edit_product.png) | Some minor warnings |
+| Edit Product | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_edit_product.png) | Some minor warnings |
+| Shopping Bag | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_bag.png) | Some minor warnings |
+| Shopping Bag | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_bag.png) | Some minor warnings |
+| Checkout | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_checkout.png) | Some minor warnings |
+| Checkout | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_checkout.png) | Some minor warnings |
+| Checkout Success | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_checkout_success.png) | Some minor warnings |
+| Checkout Success | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_checkout_success.png) | Some minor warnings |
+| User Profile | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_profile.png) | Some minor warnings |
+| User Profile | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_profile.png) | Some minor warnings |
+| Contact | Mobile | ![screenshot](docs/lighthouse/lighthouse_mobile_contact.png) | Some minor warnings |
+| Contact | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_contact.png) | Some minor warnings |
+
 ## User Stories Testing
 
 ## Fixed Bugs
