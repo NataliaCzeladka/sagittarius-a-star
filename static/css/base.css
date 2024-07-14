@@ -30,6 +30,25 @@ main {
     margin: 10px 0 10px 0;
 }
 
+.navbar {
+    padding-top: 0;
+}
+
+.categories-li {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+a {
+    color: #5e7ea8;
+}
+
+a:hover {
+    color: #92afd6;
+    text-decoration: none;
+}
+
 .home-page-text-lge {
     font-family: 'Orbitron', sans-serif;
     font-size: 350%;
@@ -59,10 +78,6 @@ main {
     height: 60px;
 }
 
-.text-info {
-    color: #e4caa3 !important;
-}
-
 .shop-now-button {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
@@ -79,6 +94,44 @@ main {
     background-color: #5e7ea8;
     border:#000 solid 2px;
     color:#000;
+}
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 200%;
+    letter-spacing: 2px;
+    color: #ecc488;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.glaucous {
+    color: #5e7ea8;
+}
+
+.text-info {
+    color: #e4caa3 !important;
+}
+
+.overlay {
+    flex: 1 0 auto;
+	background-image: url('../images/shutterstock_522121006.jpg');
+    background-size: 50%;
+    background-repeat: repeat;
+	z-index: 1;
+    padding-bottom: 30px;
+}
+
+.overlay-inner {
+    margin-top: 40px;
+    padding: 0 30px 30px 30px;
+    border: 2px solid #656375;
+    border-radius: 0;
+    background-color: #00000090;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .pagination {
@@ -114,6 +167,10 @@ main {
     color: #5e7ea8;
 }
 
+.product-list {
+    padding: 0 6rem;
+}
+
 .btn-black {
     background: black;
     color: #5e7ea8;
@@ -138,72 +195,6 @@ main {
     color: white !important;
 }
 
-footer {
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-}
-
-a {
-    color: #5e7ea8;
-}
-
-a:hover {
-    color: #92afd6;
-    text-decoration: none;
-}
-
-.categories-li {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.navbar {
-    padding-top: 0;
-}
-
-.orbitron {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 200%;
-    letter-spacing: 2px;
-    color: #ecc488;
-}
-
-.roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.glaucous {
-    color: #5e7ea8;
-}
-
-.overlay {
-    flex: 1 0 auto;
-	background-image: url('../images/shutterstock_522121006.jpg');
-    background-size: 50%;
-    background-repeat: repeat;
-	z-index: 1;
-    padding-bottom: 30px;
-}
-
-.overlay-inner {
-    margin-top: 40px;
-    padding: 0 30px 30px 30px;
-    border: 2px solid #656375;
-    border-radius: 0;
-    background-color: #00000090;
-    width: 100%;
-    overflow-x: auto;
-}
-
-.form-control {
-    border-radius: 0 !important;
-}
-
-.product-list {
-    padding: 0 6rem;
-}
-
 .btt-button {
     height: 42px;
     width: 42px;
@@ -221,6 +212,15 @@ a:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+footer {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
 /* Bootstrap toasts customization */
@@ -339,10 +339,6 @@ input[name='q']::placeholder {
 	color: #fff;
     background-color: #222;
     border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
 }
 
 /* Product Form */
@@ -788,10 +784,8 @@ input[name='q']::placeholder {
         min-width: 180px;
     }
 
-    .book-name {
-        h3 {
-            font-size: 140%;
-        }
+    .book-name h3{
+        font-size: 140%;
     }
 
     footer {
