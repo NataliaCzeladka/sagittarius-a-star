@@ -5,55 +5,56 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay">
-        <div class="container overlay-inner">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <hr>
-                    <h2 class="mb-4 glaucous">Product Management</h2>
-                    <h5 class="text-white">Edit a Product</h5>
-                    <hr>
-                </div>
+<div class="overlay">
+    <div class="container overlay-inner">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="mb-4 glaucous">Product Management</h2>
+                <h5 class="text-white">Edit a Product</h5>
+                <hr>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        {% for field in form %}
-                            {% if field.name == 'is_new' %}
-                                <div class="form-group">
-                                    <label for="{{ field.id_for_label }}">{{ custom_labels.is_new }}</label>
-                                    {{ field }}
-                                </div>
-                            {% elif field.name == 'is_bestseller' %}
-                                <div class="form-group">
-                                    <label for="{{ field.id_for_label }}">{{ custom_labels.is_bestseller }}</label>
-                                    {{ field }}
-                                </div>
-                            {% elif field.name != 'image' %}
-                                {{ field|as_crispy_field }}
-                            {% else %}
-                                {{ field }}
-                            {% endif %}
-                        {% endfor %}
-                        <div class="text-right">
-                            <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                            <button class="btn btn-black rounded-0" type="submit">Update Product</button>
-                        </div>
-                    </form>
-                </div>            
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
+                    enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    {% if field.name == 'is_new' %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}">{{ custom_labels.is_new }}</label>
+                        {{ field }}
+                    </div>
+                    {% elif field.name == 'is_bestseller' %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}">{{ custom_labels.is_bestseller }}</label>
+                        {{ field }}
+                    </div>
+                    {% elif field.name != 'image' %}
+                    {{ field|as_crispy_field }}
+                    {% else %}
+                    {{ field }}
+                    {% endif %}
+                    {% endfor %}
+                    <div class="text-right">
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Update Product</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+{{ block.super }}
+<script>
+    $('#new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}

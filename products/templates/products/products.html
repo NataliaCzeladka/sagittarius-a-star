@@ -5,189 +5,209 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay product-list">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col text-center mt-3">
-                    <h3 class="orbitron m-4 product-category">
-                        {% if current_categories %}
-                            {{ current_categories.0.friendly_name }}
-                        {% elif current_bestsellers == True %}
-                            {{ 'Bestsellers' }}
-                        {% elif current_new_arrivals == True %}
-                            {{ 'New Arrivals' }}
-                        {% elif current_sorting == 'price_asc' or current_sorting == 'price_desc' %}
-                            {{ 'Books by price' }}
-                        {% elif current_sorting == 'rating_asc' or current_sorting == 'rating_desc' %}
-                            {{ 'Books by rating' }}
-                        {% elif current_sorting == 'year_asc' or current_sorting == 'year_desc' %}
-                            {{ 'Books by year' }}
-                        {% elif search_term %}
-                        {% else %}
-                            All Books
-                        {% endif %}
-                    </h3>
-                    <hr class="w-50 mb-1">
-                </div>
+<div class="overlay product-list">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h3 class="orbitron m-4 product-category">
+                    {% if current_categories %}
+                    {{ current_categories.0.friendly_name }}
+                    {% elif current_bestsellers == True %}
+                    {{ 'Bestsellers' }}
+                    {% elif current_new_arrivals == True %}
+                    {{ 'New Arrivals' }}
+                    {% elif current_sorting == 'price_asc' or current_sorting == 'price_desc' %}
+                    {{ 'Books by price' }}
+                    {% elif current_sorting == 'rating_asc' or current_sorting == 'rating_desc' %}
+                    {{ 'Books by rating' }}
+                    {% elif current_sorting == 'year_asc' or current_sorting == 'year_desc' %}
+                    {{ 'Books by year' }}
+                    {% elif search_term %}
+                    {% else %}
+                    All Books
+                    {% endif %}
+                </h3>
+                <hr class="w-50 mb-1">
             </div>
-            <div class="row">
-                <div class="col-10 offset-1">
-                    <div class="row mt-1 mb-2">
-                        <div class="col-12 col-lg-6 my-auto order-md-last d-flex justify-content-center justify-content-lg-end">
-                            <div class="sort-select-wrapper w-50">
-                                <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                                    <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                                    <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                                    <option value="year_asc" {% if current_sorting == 'year_asc' %}selected{% endif %}>Year (oldest to newest)</option>
-                                    <option value="year_desc" {% if current_sorting == 'year_desc' %}selected{% endif %}>Year (newest to oldest)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 order-lg-first d-flex justify-content-center justify-content-lg-start">
-                            <p class="mt-3 text-center text-md-left pagination">
-                                {% if search_term or current_categories or current_sorting or current_bestsellers or current_new_arrivals %}
-                                    <span><a href="{% url 'products' %}"><i class="fa-solid fa-arrow-left"></i> Back</a> |&nbsp;</span>
-                                {% endif %}
-                                {{ products.paginator.count }} books found {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-                            </p>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                    <div
+                        class="col-12 col-lg-6 my-auto order-md-last d-flex justify-content-center justify-content-lg-end">
+                        <div class="sort-select-wrapper w-50">
+                            <select id="sort-selector"
+                                class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort
+                                    by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                                    Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                                    Price (high to low)</option>
+                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                                    Rating (low to high)</option>
+                                <option value="rating_desc"
+                                    {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)
+                                </option>
+                                <option value="year_asc" {% if current_sorting == 'year_asc' %}selected{% endif %}>Year
+                                    (oldest to newest)</option>
+                                <option value="year_desc" {% if current_sorting == 'year_desc' %}selected{% endif %}>
+                                    Year (newest to oldest)</option>
+                            </select>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="product-container">
-                    <div class="row mt-1 mb-2"></div>
-                    <div class="row">
-                        {% for product in products %}
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-                                <div class="card m-3">
-                                    {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    </a>
-                                    {% else %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                    </a>
-                                    {% endif %}
-                                    <div class="card-body pb-0">
-                                        <p class="mb-0 text-green">{{ product.title }} / {{ product.year }}</p>
-                                    </div>
-                                    <div class="card-footer border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
-                                                {% if product.category %}
-                                                    <p class="mt-1 mb-0">
-                                                        <a class="txt-card-footer" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                                        </a>
-                                                    </p>
-                                                {% endif %}
-                                                {% if product.rating %}
-                                                    <p class="txt-card-footer"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5.0</p>
-                                                {% else %}
-                                                    <p class="txt-card-footer">No Rating</p>
-                                                {% endif %}
-                                            </div> 
-                                        </div>
-                                        {% if request.user.is_superuser %}
-                                        <div class="text-right">
-                                            <small>
-                                                <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                            </small>
-                                        </div>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                            {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-1">
-                                <br>
-                            </div>
-                            {% endif %}                        
-                            {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3">
-                                <br>
-                            </div>
+                    <div class="col-12 col-lg-6 order-lg-first d-flex justify-content-center justify-content-lg-start">
+                        <p class="mt-3 text-center text-md-left pagination">
+                            {% if search_term or current_categories or current_sorting or current_bestsellers or current_new_arrivals %}
+                            <span><a href="{% url 'products' %}"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                                |&nbsp;</span>
                             {% endif %}
-                            {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <br>
-                            </div>
-                            {% endif %}
-                            {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <br>
-                            </div>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <!-- product pagination -->
-            <div class="row">
-                <div class="col">
-                    <div class="pagination mb-3">
-                        <span class="step-links text-center mx-auto">
-                            {% if products.has_previous %}
-                                <a href="?page=1{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">&laquo; First</a>
-                                <a class="mx-2" href="?page={{ products.previous_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Previous</a>
-                            {% endif %}
-                    
-                            <span class="current">
-                                Page {{ products.number }} of {{ products.paginator.num_pages }}
-                            </span>
-                    
-                            {% if products.has_next %}
-                                <a class="mx-2" href="?page={{ products.next_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Next</a>
-                                <a href="?page={{ products.paginator.num_pages }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Last &raquo;</a>
-                            {% endif %}
-                        </span>
+                            {{ products.paginator.count }} books found {% if search_term %} found for
+                            <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="product-container">
+                <div class="row mt-1 mb-2"></div>
+                <div class="row">
+                    {% for product in products %}
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card m-3">
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ product.image.url }}"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+                            <div class="card-body pb-0">
+                                <p class="mb-0 text-green">{{ product.title }} / {{ product.year }}</p>
+                            </div>
+                            <div class="card-footer border-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                        {% if product.category %}
+                                        <p class="mt-1 mb-0">
+                                            <a class="txt-card-footer"
+                                                href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            </a>
+                                        </p>
+                                        {% endif %}
+                                        {% if product.rating %}
+                                        <p class="txt-card-footer"><i class="fas fa-star mr-1"></i>{{ product.rating }}
+                                            / 5.0</p>
+                                        {% else %}
+                                        <p class="txt-card-footer">No Rating</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% if request.user.is_superuser %}
+                                <div class="text-right">
+                                    <small>
+                                        <a class="text-success" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-1">
+                        <br>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3">
+                        <br>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                        <br>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-5">
+                        <br>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- product pagination -->
+        <div class="row">
+            <div class="col">
+                <div class="pagination mb-3">
+                    <span class="step-links text-center mx-auto">
+                        {% if products.has_previous %}
+                        <a
+                            href="?page=1{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">&laquo;
+                            First</a>
+                        <a class="mx-2"
+                            href="?page={{ products.previous_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Previous</a>
+                        {% endif %}
+
+                        <span class="current">
+                            Page {{ products.number }} of {{ products.paginator.num_pages }}
+                        </span>
+
+                        {% if products.has_next %}
+                        <a class="mx-2"
+                            href="?page={{ products.next_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Next</a>
+                        <a
+                            href="?page={{ products.paginator.num_pages }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}{% if request.GET.direction %}&direction={{ request.GET.direction }}{% endif %}">Last
+                            &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="btt-button shadow-sm rounded-0 border">
-        <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
-        </a>	
-    </div>
+</div>
+<div class="btt-button shadow-sm rounded-0 border">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
-    
-    <script type="text/javascript">
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
+{{ block.super }}
+<script>
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
 
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
 
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
 
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
-                window.location.replace(currentUrl);
-            }
-        })
-    </script>
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}

@@ -385,6 +385,10 @@ input[name='q']::placeholder {
     .card {
         padding: 15px 10px 0 10px;
     }
+
+    .image-container a img {
+        max-width: 80%;
+    }
   }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
