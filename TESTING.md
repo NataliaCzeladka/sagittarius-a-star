@@ -24,6 +24,8 @@ All tests described and documented in the Code Validation and the Lighthouse Aud
 
 [The W3C Markup Validation Service](https://validator.w3.org/) and [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate every page of the project to ensure there were no syntax errors. The results clearly showed that the website stays in compliance with the standards and recommendations set by the World Wide Web Consortium.
 
+[JSHint](https://jshint.com/), a static code analysis tool, was used to check if JavaScript source code complies with coding rules. No errors were found in this area.
+
 ### HTML Validation
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files. No errors or warnings were found. Django allauth templates were not tested. Pages that required user authentication were validated by direct input.
@@ -52,6 +54,17 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | profile.css | ![profile.css validation](static/docs/validate_css_profile.png) | Pass: No Errors |
 
 ### JS Hint Testing
+
+I have used [JSHint](https://jshint.com/) to identify potential errors in my JavaScript file. No errors were found.
+
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| stripe_elements.js | ![script.js](static/docs/validate_js_stripe_elements.png) | Undefined Stripe element |
+| countryfields.js | ![script.js](static/docs/validate_js_country_fields.png) | Pass : No Errors |
+| script from bag.html | ![script.js](static/docs/validate_js_bag.png) | Pass: No Errors |
+| script from product.html | ![script.js](static/docs/validate_js_product.png) | Pass: No Errors |
+| script from add/edit_product.html | ![script.js](static/docs/validate_js_add_edit_product.png) | Pass: No Errors |
+| script from quantity_input_script.html | ![script.js](static/docs/validate_js_quantity_input.png) | Pass: No Errors |
 
 ### Python Testing
 
