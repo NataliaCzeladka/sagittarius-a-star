@@ -43,6 +43,14 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ### CSS Validation
 
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS files. No errors were found.
+
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| base.css | ![base.css validation](static/docs/validate_css_base.png) | Pass: No Errors |
+| checkout.css | ![checkout.css validation](static/docs/validate_css_checkout.png) | Pass: No Errors |
+| profile.css | ![profile.css validation](static/docs/validate_css_profile.png) | Pass: No Errors |
+
 ### JS Hint Testing
 
 ### Python Testing
