@@ -186,8 +186,8 @@
 {{ block.super }}
 <script>
     $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0)
-    })
+        window.scrollTo(0, 0);
+    });
 
     $('#sort-selector').change(function () {
         var selector = $(this);
@@ -208,6 +208,6 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}
