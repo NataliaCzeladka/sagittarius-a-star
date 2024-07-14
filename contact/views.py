@@ -15,6 +15,7 @@ def contact(request):
     }
     return render(request, 'contact/contact.html', context)
 
+
 def contact_form(request):
     """Send contact form"""
     if request.method == 'POST':
@@ -47,7 +48,8 @@ def contact_form(request):
 
             return redirect(reverse('contact'))
         else:
-            messages.error(request, 'Failed to send message. Please try again.')
+            messages.error(
+                request, 'Failed to send message. Please try again.')
 
     else:
         form = ContactRequestForm()

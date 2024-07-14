@@ -3,6 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
 from decimal import Decimal
 
+
 class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
@@ -16,8 +17,10 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+
 def current_year():
     return timezone.now().year
+
 
 class Product(models.Model):
     PAPERBACK = 'Paperback'
@@ -28,7 +31,7 @@ class Product(models.Model):
         (HARDCOVER, 'Hardcover'),
     ]
 
-    # Generate choices for years from 1980 to current year
+    """Generate choices for years from 1980 to current year"""
     YEAR_CHOICES = [(year, year) for year in range(1960, current_year() + 1)]
 
     RATING_CHOICES = [
@@ -59,20 +62,22 @@ class Product(models.Model):
         (Decimal('5.0'), '5.0'),
     ]
 
-    category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        Category, null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     title = models.CharField(max_length=254)
     author = models.CharField(max_length=254)
     description = models.TextField()
     year = models.IntegerField(
-        validators=[MinValueValidator(1980), MaxValueValidator(current_year())],
+        validators=[
+            MinValueValidator(1980), MaxValueValidator(current_year())],
         choices=YEAR_CHOICES,
         default=current_year()
     )
     price = models.DecimalField(
         max_digits=6,
         decimal_places=2,
-        validators=[MinValueValidator(0.01)]  # The price has to be more than £0
+        validators=[MinValueValidator(0.01)]
     )
     rating = models.DecimalField(
         max_digits=3,

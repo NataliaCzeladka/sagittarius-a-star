@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class ContactRequest(models.Model):
     name = models.CharField(max_length=254, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)

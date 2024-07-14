@@ -30,6 +30,8 @@ def subscribe(request):
             )
 
         else:
-            messages.error(request, 'There was an error with your submission. Please try again.')
+            messages.error(
+                request,
+                'There was an error with your submission. Please try again.')
 
     return redirect(request.META.get('HTTP_REFERER', '/'))
