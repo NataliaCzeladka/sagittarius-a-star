@@ -22,7 +22,24 @@ All tests described and documented in the Code Validation and the Lighthouse Aud
 
 ## Code Validation
 
+[The W3C Markup Validation Service](https://validator.w3.org/) and [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate every page of the project to ensure there were no syntax errors. The results clearly showed that the website stays in compliance with the standards and recommendations set by the World Wide Web Consortium.
+
 ### HTML Validation
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files. No errors or warnings were found. Django allauth templates were not tested. Pages that required user authentication were validated by direct input.
+
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2F) | ![home page validation](static/docs/validate_html_home.png) | Pass: No Errors |
+| Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fproducts%2F) | ![products page validation](static/docs/validate_html_products.png) | Pass: No Errors |
+| Product Detail | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fproducts%2F2%2F) | ![product detail page validation](static/docs/validate_html_product_detail.png) | Pass: No Errors |
+| Add Product | [W3C](https://validator.w3.org/nu/#textarea) | ![add product page validation](static/docs/validate_html_add_product.png) | Pass: No Errors |
+| Edit Product | [W3C](https://validator.w3.org/nu/#textarea) | ![edit product page validation](static/docs/validate_html_edit_product.png) | Pass: No Errors |
+| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fbag%2F) | ![shopping bag page validation](static/docs/validate_html_bag.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fcheckout%2F) | ![checkout page validation](static/docs/validate_html_checkout.png) | Pass: No Errors |
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2541D772F60543C38B84B7BA09FCA42B) | ![checkout success page validation](static/docs/validate_html_checkout_success.png) | Pass: No Errors |
+| User Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![user profile page validation](static/docs/validate_html_profile.png) | Pass: No Errors |
+| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsagittarius-a-star-ab236042b163.herokuapp.com%2Fcontact%2F) | ![contact page validation](static/docs/validate_html_contact.png) | Pass: No Errors |
 
 ### CSS Validation
 
