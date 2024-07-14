@@ -24,7 +24,7 @@ All tests described and documented in the Code Validation and the Lighthouse Aud
 
 [The W3C Markup Validation Service](https://validator.w3.org/) and [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate every page of the project to ensure there were no syntax errors. The results clearly showed that the website stays in compliance with the standards and recommendations set by the World Wide Web Consortium.
 
-[JSHint](https://jshint.com/), a static code analysis tool, was used to check if JavaScript source code complies with coding rules. No errors were found in this area. And finally, I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate my Python file.
+[JSHint](https://jshint.com/), a static code analysis tool, was used to check if JavaScript source code complies with coding rules. No errors were found in this area. And finally, I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate my Python files.
 
 ### HTML Validation
 
@@ -68,7 +68,7 @@ I have used [JSHint](https://jshint.com/) to identify potential errors in my Jav
 
 ### Python Testing
 
-I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate my Python file.
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate my Python files.
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
@@ -106,6 +106,15 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/NataliaCzeladka/sagittarius-a-star/main/profiles/views.py) | ![screenshot](docs/validation/validate_python_profiles_views.png) | No Errors Found |
 
 ## Browser Compatibility
+
+I have tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](docs/chrome.png) | Works as expected |
+| Firefox | ![screenshot](docs/firefox.png) | Works as expected |
+| Edge | ![screenshot](docs/edge.png) | Works as expected |
+| Opera | ![screenshot](docs/opera.png) | Works as expected |
 
 ## Responsiveness
 
