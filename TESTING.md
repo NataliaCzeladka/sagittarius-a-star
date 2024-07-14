@@ -1,6 +1,6 @@
 # TESTING
 
-Return back to the [README.md](README.md) file.
+Return to the [README.md](README.md) file.
 
 ## Introduction
 
@@ -160,6 +160,69 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | Contact | Desktop | ![screenshot](docs/lighthouse/lighthouse_desktop_contact.png) | Some minor warnings |
 
 ## User Stories Testing
+
+EPIC 1: General Site Functionality
+
+| User Story | Completed? |
+| --- | --- |
+| As a first-time user, I would like to find clear information about the site's purpose to decide if it aligns with my interests and if I wish to explore it further. | ✔️ |
+| As a site user, I want to interact with a visually appealing, intuitive, responsive website that is easy to navigate across different devices, helping me quickly find desired content. | ✔️ |
+| As a site user, I want to access a search functionality to quickly locate specific products. | ✔️ |
+| As a site user, I would appreciate having the option to contact site owners for additional information or to file a complaint. | ✔️ |
+
+EPIC 2: Product Browsing and Searching
+
+| User Story | Completed? |
+| --- | --- |
+| As a site user, I want to see a full list of products allowing me to browse and explore the complete selection of available items. | ✔️ |
+| As a site user, I want to view the price of a product to assess its affordability and decide whether it fits my budget before purchasing. | ✔️ |
+| As a site user, I can access individual product pages to explore additional details such as product description. | ✔️ |
+| As a site user, I want to access a sorting functionality that allows me to organize results by criteria such as price, publication date, and customer ratings to narrow down my choices effectively. | ✔️ |
+| As a site user, I expect a seamless transition from browsing to purchasing books, with clear calls-to-action and a user-friendly checkout process.  | ✔️ |
+| As a site user, I prefer to see real-time availability status (e.g., in stock, out of stock) of books to make informed purchase decisions. |  Take a look at the Future Implementations section in [README.md](README.md) file. |
+| As a registered user, I would like the option to add books to a wishlist or save them for later purchase, making it easy to track and manage items of interest. |  Take a look at the Future Implementations section in [README.md](README.md) file. |
+| As a registered user, I would like the ability to review products I've purchased to share my experience with other potential customers. |  Take a look at the Future Implementations section in [README.md](README.md) file. |
+
+EPIC 3 SHOPPING AND CHECKOUT PROCESS
+
+| User Story | Completed? |
+| --- | --- |
+| As a site user, I can add products to my shopping bag, where they will be stored until I am ready to purchase them. | ✔️ |
+| As a site user, I can modify the quantity of items in my shopping bag, making it easy to increase or decrease quantities based on my preferences. | ✔️ |
+| As a site user, I can delete items from my shopping bag to refine my selections and ensure my final purchase includes only the items I intend to buy. | ✔️ |
+| As a site user, I can see the chosen items in my shopping bag to review my selections, check quantities, and verify prices before proceeding to checkout.  | ✔️ |
+| As a site user, I can securely and efficiently complete my purchase transaction using card payment, providing payment and shipping information to finalize my order and receive selected products. | ✔️ |
+| As a site user, I receive an email confirming my order after purchase, allowing me to review the purchase details and confirm that my order was successfully processed. | ✔️ |
+| As a registered user, I have access to my order history to review past purchases, track order statuses, and keep a record of transactions for future reference.  | ✔️ |
+
+EPIC 4 - USER ACCOUNT MANAGEMENT
+
+| User Story | Completed? |
+| --- | --- |
+| As a site user, I want to create an account to store my shipping details for the future transactions. | ✔️ |
+| As a registered user, I want to access my order history to review my past purchases and find items I have previously bought. | ✔️ |
+| As a registered user, I want the ability to update my personal information to ensure it is current and accurate.  | ✔️ |
+| As a registered user, I would like to add products to my wishlist to keep track of items I am interested in purchasing in the future. | Take a look at the Future Implementations section in [README.md](README.md) file. |
+| As a registered user, I would like to be able to leave reviews for products I have purchased in the past, sharing my insights with other users. | Take a look at the Future Implementations section in [README.md](README.md) file. |
+
+EPIC 5 - PRODUCT ADMINISTRATION
+
+| User Story | Completed? |
+| --- | --- |
+| As a site administrator, I can add new products to the store to expand the range of available items and ensure the product catalog is consistently refreshed. | ✔️ |
+| As a site administrator, I can edit the details of individual products to guarantee that product information remains current and correct. | ✔️ |
+| As a site administrator, I can delete products from the store to efficiently manage inventory, eliminating items that are discontinued or no longer in demand. | ✔️ |
+| As a site administrator, I have the ability to set and adjust stock levels for each product, ensuring precise inventory control to prevent overselling or stockouts, and to maintain accurate product availability information for users. | Take a look at the Future Implementations section in [README.md](README.md) file. |
+
+EPIC 6 - MARKETING AND DIGITAL PRESENCE
+
+| User Story | Completed? |
+| --- | --- |
+| As a site user, I want to be able to subscribe to the site's newsletter to receive offers and updates via email. | ✔️ |
+| As a site admin, I need to set relevant keywords on site pages to enhance visibility and improve search engine ranking, making it easier for potential customers to find the site on Google. | ✔️ |
+| As a site admin, I want to display my business's social media accounts on the site to encourage users to engage more deeply with the brand. | ✔️ |
+| As a site admin, I want to implement customer retention strategies (such as loyalty programs, and exclusive offers) to enhance customer satisfaction and encourage repeat purchases. | Take a look at the Future Implementations section in [README.md](README.md) file. |
+| As a site admin, I want to create referral programs that encourage current customers to refer new customers, using word-of-mouth marketing to grow our customer community. | Take a look at the Future Implementations section in [README.md](README.md) file. |
 
 ## Fixed Bugs
 
