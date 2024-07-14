@@ -1,8 +1,11 @@
+{% load static %}
+
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-lg-none">
             <a class="nav-link categories-li text-white text-uppercase mr-5" href="{% url 'home' %}" id="home-link">
-                Home
+                <small class="logo" style="font-size: 100%;"><img src="{% static 'favicon/black_hole.png' %}" alt="logo" style="width: 40px; height: 40px">
+                    Sagittarius A-Star</small>
             </a>
         </li>
         <li class="nav-item dropdown">
