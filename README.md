@@ -1,12 +1,11 @@
 # Sagittarius A-Star: A Supermassive Bookstore
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/NataliaCzeladka/sagittarius-a-star)](https://github.com/NataliaCzeladka/sagittarius-a-star/commits/main)
-[![GitHub last commit](https://img.shields.io/github/last-commit/NataliaCzeladka/sagittarius-a-star)](https://github.com/NataliaCzeladka/sagittarius-a-star/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/NataliaCzeladka/sagittarius-a-star)](https://github.com/NataliaCzeladka/sagittarius-a-star)
 
 Welcome to 'Sagittarius A-Star', an astronomy-focused online bookstore, where the wonders of the universe are just a click away!
 
-![Sagittarius A-Star Mockup](static/docs/mockup.png)
+![Sagittarius A-Star Mockup](docs/mockup.png)
 
 Named after the supermassive black hole at the center of our galaxy, our online bookstore is dedicated to bringing the vast and fascinating world of astronomy to your fingertips. Whether you're a seasoned astronomer, a curious beginner, or even a young aspiring stargazer, you'll find a diverse collection of astronomy books tailored to your interests.
 
@@ -91,19 +90,19 @@ The colour scheme of "Sagittarius A-Star: A Supermassive Book Store" was generat
 
 I used [Image Colour Picker](https://imagecolorpicker.com/) to find the best shades in my home page background image, and [Coolors](https://coolors.co/000000-adadad-fafafa-ad9064-5e7ea8-194d60) to generate my colour palette.
 
-![Colour Palette](static/docs/colour_palette.png)
+![Colour Palette](docs/colour_palette.png)
 
 ### Typography
 
 To find the right combination of well-matching fonts, I used one of the font pairing services, [fontpair.co](https://www.fontpair.co/). My first choice was a very popular and widely used sans-serif font called [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto), designed by Google for Android devices. It's a classic and elegant typeface that ensures easy readability. Planning to use it for the main text content, such as product descriptions and form input fields, I needed another font for titles, subheadings, and form labels to complement it harmoniously. To my surprise, the match I liked the most was Roboto & Roboto — the simplest solution I could imagine but somehow never thought of.
 
-![Roboto&Roboto](static/docs/roboto.png)
-![Roboto Sample](static/docs/roboto1.png)
+![Roboto&Roboto](docs/roboto.png)
+![Roboto Sample](docs/roboto1.png)
 
 For the website's main logo, navbar, main headings, and footer, I used another sans-serif font called [Orbitron](https://fonts.google.com/specimen/Orbitron?query=orbitron). I believe its modern and futuristic design added the scientific vibe I so desperately wanted to create.
 
-![Orbitron](static/docs/orbitron.png)
-![Orbitron Sample](static/docs/orbitron1.png)
+![Orbitron](docs/orbitron.png)
+![Orbitron Sample](docs/orbitron1.png)
 
 I used [Google Fonts](https://fonts.google.com/) to import the fonts that style all of the text content, and [Font Awesome](https://fontawesome.com/) to provide icons across the website.
 
@@ -139,7 +138,7 @@ Images play a crucial role in enhancing the overall user experience, making the 
 
 Entity Relationship Diagrams (ERD) help visualize database architecture before creating models. Understanding the relationships between different tables can save time later in the project. I created my ERD with [Lucidchart](https://www.lucidchart.com/), a web-based diagramming application.
 
-![ERD](static/docs/lucidchart_erd.png)
+![ERD](docs/lucidchart_erd.png)
 
 At the end of my development process, a more comprehensive ERD was auto-generated using `pygraphviz` and `django-extensions`.
 
@@ -161,7 +160,7 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd](static/docs/erd.png)
+![erd](docs/erd.png)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 ## Testing
@@ -505,16 +504,16 @@ You can fork this repository by using the following steps:
 | --- | --- |
 | ![Home page picture](static/images/home_page_image1.webp) | AI-generated with [Midjourney](https://www.midjourney.com/home), used as the main home page image |
 | ![Overlay image](static/images/shutterstock_522121006.jpg) | Picture by [Ismagilova](https://www.shutterstock.com/g/Ismagilova) on [Shutterstock](https://www.shutterstock.com/), used as an overlay / background image on all pages except the home page |
-| ![Astronomy Charts](static/docs/astronomy_charts.png) | Covers of books from the 'Astronomy Charts' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Astronomy for Children](static/docs/astronomy_for_children.png) | Covers of books from the 'Astronomy for Children' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Astrophotography](static/docs/astrophotography.png) | Covers of books from the 'Astrophotography' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Astrophysics](static/docs/astrophysics.png) | Covers of books from the 'Astrophysics' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Popular Astronomy](static/docs/popular_astronomy.png) | Covers of books from the 'Popular Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Space Exploration](static/docs/space_exploration.png) | Covers of books from the 'Space Exploration' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Stargazing](static/docs/stargazing.png) | Covers of books from the 'Stargazing' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Stars & Interstellar Matter](static/docs/stars_interstellar_matter.png) | Covers of books from the 'Stars & Interstellar Matter' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Telescopes & Equipment](static/docs/telescopes_equipment.png) | Covers of books from the 'Telescopes & Equipment' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
-| ![Theoretical Astronomy](static/docs/theoretical_astronomy.png) | Covers of books from the 'Theoretical Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astronomy Charts](docs/astronomy_charts.png) | Covers of books from the 'Astronomy Charts' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astronomy for Children](docs/astronomy_for_children.png) | Covers of books from the 'Astronomy for Children' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astrophotography](docs/astrophotography.png) | Covers of books from the 'Astrophotography' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Astrophysics](docs/astrophysics.png) | Covers of books from the 'Astrophysics' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Popular Astronomy](docs/popular_astronomy.png) | Covers of books from the 'Popular Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Space Exploration](docs/space_exploration.png) | Covers of books from the 'Space Exploration' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Stargazing](docs/stargazing.png) | Covers of books from the 'Stargazing' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Stars & Interstellar Matter](docs/stars_interstellar_matter.png) | Covers of books from the 'Stars & Interstellar Matter' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Telescopes & Equipment](docs/telescopes_equipment.png) | Covers of books from the 'Telescopes & Equipment' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
+| ![Theoretical Astronomy](docs/theoretical_astronomy.png) | Covers of books from the 'Theoretical Astronomy' category sourced from [Amazon](https://www.amazon.co.uk/) listings |
 | ![No image](media/noimage.png) | AI-generated with [Midjourney](https://www.midjourney.com/home) for listings without images |
 | ![Favicon](static/favicon/black_hole.png) | Designed by [BZZRINCANTATION](https://www.flaticon.com/authors/bzzrincantation) on [Flaticon](https://www.flaticon.com/), used on the website as a store logo and a favicon |
 
