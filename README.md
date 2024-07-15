@@ -115,7 +115,7 @@ Images play a crucial role in enhancing the overall user experience, making the 
 | Size | Screenshot |
 | --- | --- |
 | Desktop | ![Desktop Wireframes1](docs/wireframes/wireframes_desktop1.png)![Desktop Wireframes2](docs/wireframes/wireframes_desktop2.png) |
-
+| Tablet | ![Tablet Wireframes1](docs/wireframes/wireframes_tablet1.png)![Tablet Wireframes2](docs/wireframes/wireframes_tablet2.png) |
 
 ### Features
 
