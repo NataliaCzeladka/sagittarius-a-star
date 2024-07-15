@@ -110,6 +110,18 @@ I used [Google Fonts](https://fonts.google.com/) to import the fonts that style 
 
 Images play a crucial role in enhancing the overall user experience, making the content more engaging. However, the website currently features only two: the main homepage picture and the overlay picture used for all other pages. This limitation stems from the fact that each listing will include a featured image uploaded by the shop owner when adding new products to the store. Additionally, there is a logo placed in the top left corner of every page, which is also used as a favicon. The images were sourced from [Shutterstock](https://www.shutterstock.com/), [Midjourney](https://www.midjourney.com/home), and [Flaticon](https://www.flaticon.com/) (details in the 'Credits' section). All book cover images came from [Amazon](https://www.amazon.co.uk/) listings.
 
+### Future Implementations
+
+For users:
+- Option to add products to a wishlist, allowing them to keep track of items they are interested in purchasing in the future.
+- Option to leave reviews for products they have purchased, and to share their insights with other users.
+- Real-time availability status (e.g., in stock, out of stock) of books, enabling informed purchase decisions.
+
+For the site admin:
+- Option to set and adjust stock levels for each product, ensuring precise inventory control to prevent overselling or stockouts, and maintaining accurate product availability information for users.
+- Customer retention strategies (such as loyalty programs and exclusive offers) to enhance customer satisfaction and encourage repeat purchases.
+- A referral program that encourages current customers to refer new customers, leveraging word-of-mouth marketing to grow the customer community.
+
 ### Wireframes
 
 ### Features
