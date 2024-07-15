@@ -224,6 +224,6 @@ EPIC 6 - MARKETING AND DIGITAL PRESENCE
 | As a site admin, I want to implement customer retention strategies (such as loyalty programs, and exclusive offers) to enhance customer satisfaction and encourage repeat purchases. | Take a look at the Future Implementations section in [README.md](README.md) file. |
 | As a site admin, I want to create referral programs that encourage current customers to refer new customers, using word-of-mouth marketing to grow our customer community. | Take a look at the Future Implementations section in [README.md](README.md) file. |
 
-## Fixed Bugs
+## Bugs
 
-## Unfixed Bugs
+There are no remaining bugs that I am aware of.
