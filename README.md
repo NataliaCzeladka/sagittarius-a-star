@@ -138,7 +138,7 @@ The header is structured to provide easy access to essential site functionalitie
 
 Mobile and tablet header designs are slightly different to fit all the features into smaller screens. The responsive design allows some elements to collapse into links or a hamburger menu.
 
-| Mobile Header |  |  |
+| Mobile Header 1 | Mobile Header 2 | Mobile Header 3 |
 | --- | --- | --- |
 | ![mobile-header3](docs/mobile-collapse2.png) | ![mobile-header2](docs/mobile-collapse1.png) | ![mobile-header](docs/mobile-header1.png) |
 
