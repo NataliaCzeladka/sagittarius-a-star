@@ -110,6 +110,13 @@ I used [Google Fonts](https://fonts.google.com/) to import the fonts that style 
 
 Images play a crucial role in enhancing the overall user experience, making the content more engaging. However, the website currently features only two: the main homepage picture and the overlay picture used for all other pages. This limitation stems from the fact that each listing will include a featured image uploaded by the shop owner when adding new products to the store. Additionally, there is a logo placed in the top left corner of every page, which is also used as a favicon. The images were sourced from [Shutterstock](https://www.shutterstock.com/), [Midjourney](https://www.midjourney.com/home), and [Flaticon](https://www.flaticon.com/) (details in the 'Credits' section). All book cover images came from [Amazon](https://www.amazon.co.uk/) listings.
 
+### Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Desktop | ![Desktop Wireframes1](docs/wireframes/wireframes_desktop1.png)![Desktop Wireframes2](docs/wireframes/wireframes_desktop2.png) |
+
+
 ### Features
 
 The 'Sagittarius A-Star' is a comprehensive platform designed to serve the needs of astronomy enthusiasts of all levels. From the organized homepage to the detailed product pages, the website offers a seamless and engaging user experience. Below is a detailed overview of the features available across the entire website:
@@ -133,7 +140,7 @@ Mobile and tablet header designs are slightly different to fit all the features 
 
 | Mobile Header |  |  |
 | --- | --- | --- |
-| ![mobile-header3](docs/mobile-collapse2.png) | ![mobile-header2](docs/mobile-collapse1.png) | ![mobile-header](docs/mobile-header2.png) |
+| ![mobile-header3](docs/mobile-collapse2.png) | ![mobile-header2](docs/mobile-collapse1.png) | ![mobile-header](docs/mobile-header1.png) |
 
 #### Footer
 
