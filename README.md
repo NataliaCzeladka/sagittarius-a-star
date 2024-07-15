@@ -110,20 +110,6 @@ I used [Google Fonts](https://fonts.google.com/) to import the fonts that style 
 
 Images play a crucial role in enhancing the overall user experience, making the content more engaging. However, the website currently features only two: the main homepage picture and the overlay picture used for all other pages. This limitation stems from the fact that each listing will include a featured image uploaded by the shop owner when adding new products to the store. Additionally, there is a logo placed in the top left corner of every page, which is also used as a favicon. The images were sourced from [Shutterstock](https://www.shutterstock.com/), [Midjourney](https://www.midjourney.com/home), and [Flaticon](https://www.flaticon.com/) (details in the 'Credits' section). All book cover images came from [Amazon](https://www.amazon.co.uk/) listings.
 
-### Future Implementations
-
-For users:
-- Option to add products to a wishlist, allowing them to keep track of items they are interested in purchasing in the future.
-- Option to leave reviews for products they have purchased, and to share their insights with other users.
-- Real-time availability status (e.g., in stock, out of stock) of books, enabling informed purchase decisions.
-
-For the site admin:
-- Option to set and adjust stock levels for each product, ensuring precise inventory control to prevent overselling or stockouts, and maintaining accurate product availability information for users.
-- Customer retention strategies (such as loyalty programs and exclusive offers) to enhance customer satisfaction and encourage repeat purchases.
-- A referral program that encourages current customers to refer new customers, leveraging word-of-mouth marketing to grow the customer community.
-
-### Wireframes
-
 ### Features
 
 The 'Sagittarius A-Star' is a comprehensive platform designed to serve the needs of astronomy enthusiasts of all levels. From the organized homepage to the detailed product pages, the website offers a seamless and engaging user experience. Below is a detailed overview of the features available across the entire website:
@@ -318,6 +304,18 @@ Email confirmations on the site serve multiple purposes, including confirming ne
 | Contact form submission | ![confirmation-email1](docs/confirmation_email1.png) |
 | Newsletter subscription |![confirmation-email2](docs/confirmation_email2.png) |
 | Order submission | ![confirmation-email3](docs/confirmation_email3.png) |
+
+### Future Implementations
+
+For users:
+- Option to add products to a wishlist, allowing them to keep track of items they are interested in purchasing in the future.
+- Option to leave reviews for products they have purchased, and to share their insights with other users.
+- Real-time availability status (e.g., in stock, out of stock) of books, enabling informed purchase decisions.
+
+For the site admin:
+- Option to set and adjust stock levels for each product, ensuring precise inventory control to prevent overselling or stockouts, and maintaining accurate product availability information for users.
+- Customer retention strategies (such as loyalty programs and exclusive offers) to enhance customer satisfaction and encourage repeat purchases.
+- A referral program that encourages current customers to refer new customers, leveraging word-of-mouth marketing to grow the customer community.
 
 ## Tools & Technologies Used
 
@@ -706,6 +704,20 @@ You can fork this repository by using the following steps:
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 ## Credits
+
+### Code
+
+- In building my website I drew inspiration from the Code Institute's 'Boutique Ado' walkthrough project. Some of the code snippets used in these videos were also applied while creating my own full-stack application.
+- Code for the outline effect used on multiple occasions across the CSS stylesheet was taken from [Stack Overflow](https://stackoverflow.com/questions/4919076/outline-effect-to-text) and was slightly edited to fit the project's needs.
+- Code for a sticky footer, which remains at the bottom of the page regardless of the amount of content, was adopted from [Materialize](https://materializecss.com/footer.html) website.
+- Arrow-up design comes from [CSS Tricks](https://css-tricks.com/snippets/css/css-triangle/).
+- Core logic/payment flow comes from [Stripe documentation](https://stripe.com/docs/payments/accept-a-payment).
+- Categories and Products fixtures were created using [JSON Formatter](https://jsonformatter.org/).
+
+### Content
+
+- The book cover images, titles, authors, publication years, ratings, and descriptions featured on this website are taken from Amazon listings and I want to acknowledge Amazon as the original source of this information. It helps improve the user experience by providing detailed product information on the platform, ensuring users have accurate details to make informed choices.
+- To help generate markdown files, README.md and TESTING.md, I used [Markdown Builder](https://tim.2bn.dev/markdown-builder) designed by my mentor, Tim Nelson.
 
 ### Media
 
