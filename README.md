@@ -3,7 +3,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/NataliaCzeladka/sagittarius-a-star)](https://github.com/NataliaCzeladka/sagittarius-a-star/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/NataliaCzeladka/sagittarius-a-star)](https://github.com/NataliaCzeladka/sagittarius-a-star)
 
-Welcome to 'Sagittarius A-Star', an astronomy-focused online bookstore, where the wonders of the universe are just a click away!
+Welcome to 'Sagittarius A-Star', an astronomy-focused online bookstore, where the wonders of the universe are just a click away! Don't hesitate to visit our [website](https://sagittarius-a-star-ab236042b163.herokuapp.com/)!
 
 ![Sagittarius A-Star Mockup](docs/mockup.png)
 
